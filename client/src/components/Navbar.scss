@@ -1,0 +1,82 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;;
+    justify-content: space-between;
+    padding: 10px 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.31);
+    // border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    .hamburger__menu {
+        width: 15%;
+        margin-left: 3rem;
+        a {
+            background: var(--color-accent);
+            padding: 10px;
+            opacity: 0.8;
+
+            &:hover {
+                opacity: 1;
+            }
+            svg {
+                color: var(--color-primary);
+                line-height: 1;
+            }
+        }
+    }
+
+    .search__login__utility {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.nav__elements {
+    display: inline-flex;
+    // width: 100%;
+    max-width: 100%;
+    width: 70%;;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+
+    .nav__single {
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;;
+            color: var(--text-primary);
+
+            img {
+                width: 70px;
+            }
+        }
+    }   
+}
+
+.search__login__utility {
+    width: 15%;
+    margin-right: 3rem;
+    .item__utility {
+        a {
+            svg {
+                stroke: var(--text-primary);
+                // height: 30px;
+            }
+        }
+    }
+}
